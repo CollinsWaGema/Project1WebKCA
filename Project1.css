@@ -65,7 +65,7 @@ nav li:hover .dropdown {
     display: block;
 }
 
-/* =================== Home Page Styles =================== */
+/*-----------------Home Page Styles----------------------- */
 .home-page {
     text-align: center;
 }
@@ -76,12 +76,18 @@ nav li:hover .dropdown {
 }
 
 .home-page .content {
+    max-width: 1000px; /* Restricts text width for better readability */
+    margin: 0 auto; /* Centers the content */
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 25px;
-    padding: 20px;
     text-align: left;
+}
+
+.text-box {
+    max-width: 1000px; /* Prevents text from stretching too far */
 }
 
 .home-page .image-box img {
@@ -90,82 +96,10 @@ nav li:hover .dropdown {
     border: 2px solid black;
 }
 
-.home-page .text-box {
-    max-width: 600px;
-}
-
 /* Footer - Shared */
 footer {
     background: #222;
     color: white;
     padding: 15px;
     margin-top: 20px;
-}
-
-/* =================== Animal Page Styles =================== */
-.animal-page {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Wildlife Logo Section */
-.animal-header {
-    width: 100%; /* Full width */
-    text-align: center; /* Center the image */
-    background-color: #f4a261; /* Match background color */
-    padding: 10px 0; /* Add some spacing */
-}
-
-.animal-header img {
-    width: 100%; /* Stretch across the page */
-    max-height: 200px; /* Adjust height if needed */
-    object-fit: contain; /* Ensures it scales properly */
-}
-
-/* Title Styling */
-.animal-page .title {
-    text-align: center;
-    margin: 20px 0;
-    width: 100%;
-    color: black;
-}
-
-/* Container for Image & Text */
-.animal-page .container {
-    display: flex;
-    width: 100%;
-    flex: 1; /* Ensures the section expands */
-}
-
-.animal-page .image-side {
-    flex: 1;
-    background: #f4a261;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.animal-page .image-side img {
-    width: 400px;
-    height: 280px;
-    border: 2px solid #333;
-}
-
-.animal-page .text-side {
-    flex: 1;
-    background: #2a9d8f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    color: white;
-}
-
-.animal-page .text-side p {
-    max-width: 100%;
-    line-height: 1.6;
 }
